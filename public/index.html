@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Crypto Sultan | Buy USDT Instantly at the Best Rate</title>
+<meta name="description" content="Crypto Sultan — buy USDT instantly at the best rate. Trusted since 2020. Fast, secure delivery on WhatsApp.">
+<meta name="theme-color" content="#080B14">
+<meta property="og:title" content="Crypto Sultan | Buy USDT Instantly at the Best Rate">
+<meta property="og:description" content="Fast, secure & trusted USDT purchases — 24×7 on WhatsApp.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="logo.png">
+<link rel="icon" href="logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#080B14; --gold:#F0C75E; --gold-deep:#C9971E;
+    --text:#E9ECF4; --text-muted:#8891A8; --line:rgba(255,255,255,.08);
+    --glass:rgba(255,255,255,.05); --glass-brd:rgba(255,255,255,.10);
+    --wa:#25D366; --danger:#E85C5C;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
+  body{
+    background:
+      radial-gradient(ellipse 60% 50% at 80% 10%, rgba(59,130,246,.18), transparent 60%),
+      radial-gradient(ellipse 55% 45% at 10% 90%, rgba(240,199,94,.12), transparent 60%),
+      var(--bg);
+    color:var(--text); font-family:'Inter',sans-serif; min-height:100vh; -webkit-font-smoothing:antialiased;
+    display:flex;flex-direction:column;
+  }
+  a{text-decoration:none;color:inherit;}
+  h1,h2{font-family:'Space Grotesk',sans-serif;letter-spacing:-.01em;}
+  a:focus-visible, button:focus-visible{outline:2px solid var(--gold); outline-offset:2px;}
+  @media (prefers-reduced-motion: reduce){*{animation:none !important;}}
+
+  .wrap{max-width:1180px;margin:0 auto;padding:0 24px;width:100%;}
+  .wrap-narrow{max-width:560px;margin:0 auto;padding:0 24px;width:100%;}
+  .center{text-align:center;}
+
+  .setup-banner{
+    background:linear-gradient(90deg,rgba(232,92,92,.14),rgba(232,92,92,.06));
+    border-bottom:1px solid rgba(232,92,92,.35);color:#F3B8B8;
+    font-family:'JetBrains Mono',monospace;font-size:12.5px;text-align:center;padding:10px 16px;
+  }
+  .setup-banner a{color:var(--gold);text-decoration:underline;font-weight:600;}
+
+  header.site{position:sticky;top:0;z-index:100;background:rgba(8,11,20,.75);backdrop-filter:blur(14px);border-bottom:1px solid var(--line);}
+  header.site .wrap{display:flex;align-items:center;justify-content:space-between;height:72px;}
+  .brand{display:flex;align-items:center;gap:10px;}
+  .logo-mark{width:38px;height:38px;border-radius:50%;object-fit:cover;box-shadow:0 0 0 1px rgba(240,199,94,.35);flex:none;}
+  .brand-block{display:flex;flex-direction:column;line-height:1.15;}
+  .logo{font-family:'Space Grotesk';font-weight:700;font-size:18px;}
+  .tagline{font-family:'JetBrains Mono';font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--text-muted);}
+  .nav-links{display:flex;gap:28px;font-size:14px;color:var(--text-muted);}
+  .nav-links a{position:relative;padding:4px 0;transition:color .15s ease;}
+  .nav-links a::after{content:"";position:absolute;left:0;right:0;bottom:-2px;height:1px;background:var(--gold);transform:scaleX(0);transition:transform .2s ease;}
+  .nav-links a:hover::after{transform:scaleX(1);}
+  .nav-links a:hover{color:var(--gold);}
+  @media (max-width:840px){.nav-links{display:none;}}
+  @media (max-width:840px){.nav-cta{display:none;}}
+
+  .nav-burger{display:none;width:38px;height:38px;border-radius:9px;background:var(--glass);border:1px solid var(--glass-brd);align-items:center;justify-content:center;flex-direction:column;gap:4px;}
+  .nav-burger span{width:16px;height:2px;background:var(--text);display:block;border-radius:2px;transition:transform .2s ease, opacity .2s ease;}
+  @media (max-width:840px){.nav-burger{display:flex;}}
+  .mobile-menu{display:none;flex-direction:column;background:rgba(8,11,20,.97);backdrop-filter:blur(14px);border-bottom:1px solid var(--line);}
+  .mobile-menu.open{display:flex;}
+  .mobile-menu a{padding:15px 24px;font-size:15px;color:var(--text-muted);border-bottom:1px solid var(--line);}
+  .mobile-menu a:hover{color:var(--gold);}
+  .mobile-menu .btn-wa{margin:14px 24px;}
+
+  .reveal{opacity:0;transform:translateY(18px);transition:opacity .6s ease, transform .6s ease;}
+  .reveal.in-view{opacity:1;transform:translateY(0);}
+
+  main.public{flex:1;}
+  section{padding:60px 0;}
+  section.hero-section{padding:0;}
+  section.alt{background:rgba(255,255,255,.015);border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
+  .hero{padding:40px 0 48px;text-align:center;width:100%;}
+  @media (max-width:600px){
+    section{padding:44px 0;}
+    .hero{padding:28px 0 36px;}
+  }
+
+  .badge-line{display:inline-flex;align-items:center;gap:8px;font-family:'JetBrains Mono',monospace;font-size:11.5px;letter-spacing:.08em;color:var(--gold);background:rgba(240,199,94,.08);border:1px solid rgba(240,199,94,.25);padding:6px 14px;border-radius:999px;margin-bottom:16px;}
+  .live-dot{width:7px;height:7px;border-radius:50%;background:#2ECC71;display:inline-block;box-shadow:0 0 0 0 rgba(46,204,113,.6);animation:pulse 2s infinite;}
+  @keyframes pulse{0%{box-shadow:0 0 0 0 rgba(46,204,113,.55);}70%{box-shadow:0 0 0 8px rgba(46,204,113,0);}100%{box-shadow:0 0 0 0 rgba(46,204,113,0);}}
+
+  h1{font-size:clamp(28px,6vw,38px);font-weight:700;line-height:1.12;letter-spacing:-.02em;margin-bottom:14px;}
+  h1 span{background:linear-gradient(90deg,#F0C75E,#F7DE96 45%,#C9971E);-webkit-background-clip:text;background-clip:text;color:transparent;}
+  .sub{color:var(--text-muted);font-size:15.5px;margin-bottom:28px;}
+
+  .rate-card{background:var(--glass);border:1px solid var(--glass-brd);backdrop-filter:blur(16px);border-radius:18px;padding:30px 28px;margin-bottom:22px;}
+  .rate-label{font-family:'JetBrains Mono';font-size:11.5px;text-transform:uppercase;letter-spacing:.12em;color:var(--text-muted);margin-bottom:14px;display:flex;align-items:center;justify-content:center;gap:8px;}
+  .rate-value{font-family:'Space Grotesk';font-weight:700;font-size:48px;line-height:1;font-feature-settings:"tnum";font-variant-numeric:tabular-nums;}
+  .rate-value small{font-size:16px;font-weight:500;color:var(--text-muted);}
+  .rate-change{font-family:'JetBrains Mono';font-size:13px;color:#2ECC71;margin-top:10px;}
+
+  .btn-wa{display:flex;align-items:center;justify-content:center;gap:10px;background:var(--wa);color:#fff;font-weight:700;font-size:17px;padding:18px 26px;border-radius:12px;box-shadow:0 10px 28px rgba(37,211,102,.3);transition:transform .15s ease, box-shadow .15s ease;}
+  .btn-wa:hover{transform:translateY(-2px);box-shadow:0 14px 34px rgba(37,211,102,.4);}
+  .btn-wa:active{transform:translateY(0);}
+  .btn-wa svg{width:22px;height:22px;flex:none;}
+  .btn-wa.sm{padding:11px 20px;font-size:14px;border-radius:9px;box-shadow:none;display:inline-flex;}
+  .btn-wa.sm svg{width:17px;height:17px;}
+
+  .trust-row{display:flex;justify-content:center;gap:22px;margin-top:22px;flex-wrap:wrap;font-size:12.5px;color:var(--text-muted);}
+  .trust-row span{display:flex;align-items:center;gap:6px;}
+  .trust-row svg{width:14px;height:14px;color:var(--gold);}
+
+  .glass{background:var(--glass);border:1px solid var(--glass-brd);backdrop-filter:blur(16px);border-radius:16px;}
+  .section-eyebrow{font-family:'JetBrains Mono',monospace;font-size:11.5px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);margin-bottom:10px;display:flex;align-items:center;gap:10px;}
+  .section-eyebrow::before{content:"";width:20px;height:1px;background:var(--gold);display:inline-block;}
+  .center .section-eyebrow{justify-content:center;}
+  .section-title{font-size:clamp(24px,3.4vw,32px);font-weight:700;letter-spacing:-.015em;margin-bottom:12px;}
+  .section-desc{color:var(--text-muted);max-width:56ch;margin-bottom:32px;font-size:15px;line-height:1.6;}
+  .center .section-desc{margin-left:auto;margin-right:auto;}
+
+  .cards-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;}
+  @media (max-width:900px){.cards-grid{grid-template-columns:repeat(2,1fr);}}
+  @media (max-width:520px){.cards-grid{grid-template-columns:1fr;}}
+  .feat-card{padding:24px 20px;transition:transform .2s ease, border-color .2s ease, box-shadow .2s ease;}
+  .feat-card:hover{transform:translateY(-4px);border-color:rgba(240,199,94,.35);box-shadow:0 12px 28px rgba(0,0,0,.28);}
+  .feat-icon{width:42px;height:42px;border-radius:11px;background:linear-gradient(135deg,rgba(240,199,94,.18),rgba(240,199,94,.05));border:1px solid rgba(240,199,94,.25);display:flex;align-items:center;justify-content:center;margin-bottom:14px;color:var(--gold);}
+  .feat-icon svg{width:20px;height:20px;}
+  .feat-card h4{font-size:15.5px;margin-bottom:6px;font-weight:600;letter-spacing:-.01em;}
+  .feat-card p{font-size:13px;color:var(--text-muted);}
+
+  .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;position:relative;}
+  @media (min-width:901px){
+    .steps::before{content:"";position:absolute;top:39px;left:calc(12.5% + 15px);right:calc(12.5% + 15px);height:1px;background:linear-gradient(90deg,transparent,rgba(240,199,94,.35),transparent);z-index:0;}
+  }
+  @media (max-width:900px){.steps{grid-template-columns:repeat(2,1fr);}}
+  @media (max-width:560px){.steps{grid-template-columns:1fr;}}
+  .step-card{padding:24px 20px;transition:transform .2s ease, border-color .2s ease;position:relative;z-index:1;}
+  .step-card:hover{transform:translateY(-3px);border-color:rgba(240,199,94,.3);}
+  .step-num{font-family:'Space Grotesk';font-weight:700;font-size:13px;width:30px;height:30px;border-radius:50%;background:linear-gradient(135deg,#F0C75E,#C9971E);color:#0A0B0F;display:flex;align-items:center;justify-content:center;margin-bottom:16px;}
+  .step-card h4{font-size:15px;margin-bottom:6px;}
+  .step-card p{font-size:13px;color:var(--text-muted);}
+
+  .chip-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;}
+  @media (max-width:700px){.chip-grid{grid-template-columns:repeat(2,1fr);}}
+  .chip-card{padding:20px;text-align:center;transition:transform .2s ease, border-color .2s ease;}
+  .chip-card:hover{transform:translateY(-3px);border-color:rgba(240,199,94,.3);}
+  .chip-card .tag{font-family:'JetBrains Mono';font-weight:600;font-size:14.5px;margin-bottom:5px;}
+  .chip-card .sub{font-size:11.5px;color:var(--text-muted);}
+
+  .pay-grid{display:flex;gap:12px;flex-wrap:wrap;justify-content:center;}
+  .pay-pill{padding:12px 22px;border-radius:999px;font-family:'JetBrains Mono';font-size:13px;font-weight:600;}
+
+  .test-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;}
+  @media (max-width:900px){.test-grid{grid-template-columns:1fr 1fr;}}
+  @media (max-width:600px){.test-grid{grid-template-columns:1fr;}}
+  .test-card{padding:22px;transition:transform .2s ease, border-color .2s ease;}
+  .test-card:hover{transform:translateY(-3px);border-color:rgba(240,199,94,.3);}
+  .stars{color:var(--gold);font-size:13px;margin-bottom:10px;letter-spacing:2px;}
+  .test-card p{font-size:14px;color:var(--text);margin-bottom:14px;}
+  .test-who{display:flex;align-items:center;gap:10px;}
+  .avatar{width:32px;height:32px;border-radius:50%;background:linear-gradient(135deg,#3B82F6,#1E3A8A);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:12.5px;flex:none;}
+  .test-who span{display:block;font-size:12px;color:var(--text-muted);}
+  .test-who strong{font-size:13.5px;}
+
+  .faq-item{border-bottom:1px solid var(--line);}
+  .faq-q{width:100%;text-align:left;background:none;border:none;color:var(--text);padding:20px 2px;font-size:15.5px;font-weight:600;display:flex;justify-content:space-between;align-items:center;font-family:'Inter',sans-serif;cursor:pointer;}
+  .faq-q .plus{font-size:19px;color:var(--gold);transition:transform .25s ease;flex:none;margin-left:12px;}
+  .faq-item.open .plus{transform:rotate(45deg);}
+  .faq-a{max-height:0;overflow:hidden;transition:max-height .3s ease;}
+  .faq-a p{padding:0 2px 20px;color:var(--text-muted);font-size:14px;max-width:64ch;}
+
+  .trust-strip{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;}
+  .trust-pill{display:flex;align-items:center;gap:8px;padding:11px 18px;border-radius:999px;font-size:13px;transition:border-color .2s ease, transform .2s ease;}
+  .trust-pill:hover{border-color:rgba(240,199,94,.35);transform:translateY(-2px);}
+  .trust-pill svg{width:15px;height:15px;color:var(--gold);}
+
+  footer.site{border-top:1px solid var(--line);background:rgba(255,255,255,.015);}
+  .foot-inner{padding:52px 0 30px;}
+  .foot-grid{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:30px;margin-bottom:32px;}
+  @media (max-width:800px){.foot-grid{grid-template-columns:1fr 1fr;}}
+  .foot-grid h5{font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:var(--text-muted);margin-bottom:14px;}
+  .foot-grid a{display:block;font-size:13.5px;color:var(--text-muted);margin-bottom:10px;}
+  .foot-grid a:hover{color:var(--gold);}
+  .foot-bottom{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;padding-top:22px;border-top:1px solid var(--line);font-size:12px;color:var(--text-muted);}
+  .disclaimer{font-size:11.5px;color:var(--text-muted);opacity:.7;max-width:80ch;margin-top:14px;}
+
+  .float-wa{position:fixed;bottom:22px;right:22px;width:58px;height:58px;border-radius:50%;background:var(--wa);color:#fff;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 20px rgba(0,0,0,.4);transition:transform .15s ease;}
+  .float-wa:hover{transform:scale(1.07);}
+  .float-wa svg{width:26px;height:26px;}
+</style>
+</head>
+<body>
+<div id="app"><p style="padding:40px;text-align:center;color:#8891A8;">Loading…</p></div>
+
+<script>
+const WA_ICON = `<svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12.001 2.003c-5.514 0-9.983 4.469-9.983 9.983 0 1.76.462 3.483 1.34 5.001L2 22l5.164-1.334a9.94 9.94 0 0 0 4.837 1.235h.005c5.514 0 9.983-4.469 9.983-9.983 0-2.667-1.037-5.174-2.923-7.06a9.935 9.935 0 0 0-7.065-2.855zm0 18.115h-.004a8.4 8.4 0 0 1-4.284-1.174l-.307-.183-3.066.793.818-2.988-.2-.307a8.396 8.396 0 0 1-1.288-4.473c0-4.642 3.778-8.42 8.424-8.42 2.251 0 4.365.877 5.956 2.47a8.375 8.375 0 0 1 2.464 5.958c-.002 4.643-3.78 8.324-8.513 8.324z"/></svg>`;
+
+function isValidWaNumber(number){ return /^[1-9][0-9]{9,14}$/.test((number||'').trim()); }
+function waLink(number, text){ return `https://wa.me/${number}?text=${encodeURIComponent(text)}`; }
+
+async function trackClick(source){
+  try{ await fetch('/api/track/click', { method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify({ source }) }); }catch(e){}
+}
+async function trackVisit(){
+  try{ await fetch('/api/track/visit', { method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify({ path: location.pathname }) }); }catch(e){}
+}
+
+async function boot(){
+  let settings;
+  try{
+    const r = await fetch('/api/settings');
+    settings = await r.json();
+  }catch(e){
+    settings = { whatsappNumber:'', baseRate:97.53, siteName:'Crypto Sultan' };
+  }
+
+  const waReady = isValidWaNumber(settings.whatsappNumber);
+  const waHref = waReady ? waLink(settings.whatsappNumber, 'Hi, I want to buy USDT.') : '/admin';
+  const waAttrs = waReady ? 'target="_blank" rel="noopener"' : '';
+  const bannerHTML = waReady ? '' : `<div class="setup-banner">⚠️ WhatsApp number not set yet — buttons will open the <a href="/admin">Admin Panel</a> until it's configured.</div>`;
+  let rate = settings.baseRate;
+
+  document.getElementById('app').innerHTML = `
+    ${bannerHTML}
+    <header class="site"><div class="wrap">
+      <div class="brand">
+        <img class="logo-mark" src="logo.png" alt="${settings.siteName} logo">
+        <div class="brand-block"><span class="logo">${settings.siteName}</span><span class="tagline">Trusted Since 2020</span></div>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#rate-section">Live Rate</a></li>
+        <li><a href="#why">Why Us</a></li>
+        <li><a href="#how">How It Works</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <a class="btn-wa sm nav-cta" href="${waHref}" ${waAttrs} data-wa-track="nav">${WA_ICON} Buy on WhatsApp</a>
+      <button class="nav-burger" id="navBurger" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#rate-section">Live Rate</a>
+      <a href="#why">Why Us</a>
+      <a href="#how">How It Works</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact">Contact</a>
+      <a class="btn-wa sm" href="${waHref}" ${waAttrs} data-wa-track="mobile-menu">${WA_ICON} Buy on WhatsApp</a>
+    </div>
+    </header>
+
+    <main class="public">
+      <section class="hero-section"><div class="wrap-narrow"><div class="hero">
+        <div class="badge-line"><span class="live-dot"></span>Live Rate · 24×7 Support</div>
+        <h1>Buy USDT at the <span>Best&nbsp;Rate</span></h1>
+        <p class="sub">Fast, secure &amp; trusted — order directly on WhatsApp.</p>
+
+        <div class="rate-card" id="rate-section">
+          <div class="rate-label"><span class="live-dot"></span>Current USDT Rate</div>
+          <div class="rate-value">₹<span id="rateValue">${rate.toFixed(2)}</span><small>/ USDT</small></div>
+          <div class="rate-change" id="rateChange">▲ 0.00% today</div>
+        </div>
+
+        <a class="btn-wa" href="${waHref}" ${waAttrs} data-wa-track="hero">${WA_ICON} Chat on WhatsApp</a>
+
+        <div class="trust-row">
+          <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2 3 6v6c0 5 4 8 9 10 5-2 9-5 9-10V6l-9-4z"/></svg>Verified Seller</span>
+          <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>1000+ Customers</span>
+          <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2 3 14h7l-1 8 10-12h-7l1-8z"/></svg>Instant Delivery</span>
+        </div>
+      </div></div></section>
+
+      <section id="why"><div class="wrap center">
+        <div class="section-eyebrow">Why Choose Us</div>
+        <h2 class="section-title">Built for speed, trust &amp; transparency</h2>
+        <p class="section-desc">Everything you need for a smooth USDT purchase, handled personally on WhatsApp.</p>
+        <div class="cards-grid" style="text-align:left;">
+          <div class="glass feat-card"><div class="feat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2 3 14h7l-1 8 10-12h-7l1-8z"/></svg></div><h4>Instant Delivery</h4><p>USDT sent to your wallet within minutes of payment confirmation.</p></div>
+          <div class="glass feat-card"><div class="feat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M12 3v18"/></svg></div><h4>Best Market Rate</h4><p>Competitive live pricing with zero hidden markups.</p></div>
+          <div class="glass feat-card"><div class="feat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2 3 6v6c0 5 4 8 9 10 5-2 9-5 9-10V6l-9-4z"/></svg></div><h4>Trusted Seller</h4><p>1000+ verified transactions with a track record of reliability.</p></div>
+          <div class="glass feat-card"><div class="feat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="10" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></div><h4>Secure Transactions</h4><p>Every order is verified end-to-end for your safety.</p></div>
+          <div class="glass feat-card"><div class="feat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.5 8.5 0 1 1-4-7.2L21 3l-1 4.3a8.46 8.46 0 0 1 1 4.2z"/></svg></div><h4>Fast WhatsApp Support</h4><p>Real humans respond quickly — no bots, no long queues.</p></div>
+          <div class="glass feat-card"><div class="feat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11l3 3L22 4M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></div><h4>Transparent Process</h4><p>Clear steps, upfront rate, no surprises at checkout.</p></div>
+          <div class="glass feat-card"><div class="feat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 8v4l3 2"/></svg></div><h4>No Hidden Charges</h4><p>What you see in chat is exactly what you pay.</p></div>
+          <div class="glass feat-card"><div class="feat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg></div><h4>Multiple Payment Options</h4><p>UPI, IMPS, NEFT, RTGS or direct bank transfer — your choice.</p></div>
+        </div>
+      </div></section>
+
+      <section class="alt" id="how"><div class="wrap center">
+        <div class="section-eyebrow">Process</div>
+        <h2 class="section-title">How to Buy USDT</h2>
+        <p class="section-desc">Four simple steps from first message to USDT in your wallet.</p>
+        <div class="steps" style="text-align:left;">
+          <div class="glass step-card"><div class="step-num">1</div><h4>Contact us on WhatsApp</h4><p>Tap the button and tell us how much USDT you want to buy.</p></div>
+          <div class="glass step-card"><div class="step-num">2</div><h4>Share Required Details</h4><p>Provide your wallet address and preferred network.</p></div>
+          <div class="glass step-card"><div class="step-num">3</div><h4>Make Payment</h4><p>Pay via UPI, IMPS, NEFT, RTGS or bank transfer at the confirmed rate.</p></div>
+          <div class="glass step-card"><div class="step-num">4</div><h4>Receive USDT</h4><p>USDT is sent to your wallet instantly after payment confirmation.</p></div>
+        </div>
+      </div></section>
+
+      <section id="networks"><div class="wrap center">
+        <div class="section-eyebrow">Supported Networks</div>
+        <h2 class="section-title">Choose the network that suits you</h2>
+        <p class="section-desc">We support all major USDT networks for fast, low-fee transfers.</p>
+        <div class="chip-grid">
+          <div class="glass chip-card"><div class="tag">TRC20</div><div class="sub">Tron · Low fees</div></div>
+          <div class="glass chip-card"><div class="tag">BEP20</div><div class="sub">BNB Smart Chain</div></div>
+          <div class="glass chip-card"><div class="tag">ERC20</div><div class="sub">Ethereum</div></div>
+          <div class="glass chip-card"><div class="tag">Polygon</div><div class="sub">Low cost</div></div>
+        </div>
+      </div></section>
+
+      <section class="alt" id="payments"><div class="wrap center">
+        <div class="section-eyebrow">Payment Methods</div>
+        <h2 class="section-title">Pay however works best for you</h2>
+        <div class="pay-grid">
+          <div class="glass pay-pill">UPI</div>
+          <div class="glass pay-pill">IMPS</div>
+          <div class="glass pay-pill">NEFT</div>
+          <div class="glass pay-pill">RTGS</div>
+          <div class="glass pay-pill">Bank Transfer</div>
+        </div>
+      </div></section>
+
+      <section id="reviews"><div class="wrap center">
+        <div class="section-eyebrow">Customer Reviews</div>
+        <h2 class="section-title">Trusted by 1000+ buyers</h2>
+        <div class="test-grid" style="text-align:left;">
+          <div class="glass test-card"><div class="stars">★★★★★</div><p>Fast service. Very professional. Received USDT instantly.</p><div class="test-who"><div class="avatar">R</div><div><strong>Rohit S.</strong><span>Verified Buyer</span></div></div></div>
+          <div class="glass test-card"><div class="stars">★★★★★</div><p>Will definitely buy again. Rate was better than other sellers.</p><div class="test-who"><div class="avatar">A</div><div><strong>Anjali M.</strong><span>Verified Buyer</span></div></div></div>
+          <div class="glass test-card"><div class="stars">★★★★★</div><p>Smooth WhatsApp process, no delays, transparent pricing.</p><div class="test-who"><div class="avatar">V</div><div><strong>Vikram P.</strong><span>Verified Buyer</span></div></div></div>
+        </div>
+      </div></section>
+
+      <section class="alt" id="faq"><div class="wrap">
+        <div class="section-eyebrow">FAQ</div>
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <div id="faqList" style="max-width:720px;">
+          <div class="faq-item"><button class="faq-q">How long does delivery take?<span class="plus">+</span></button><div class="faq-a"><p>Most orders are delivered within 10 minutes of payment confirmation, depending on network congestion.</p></div></div>
+          <div class="faq-item"><button class="faq-q">What wallets are supported?<span class="plus">+</span></button><div class="faq-a"><p>Any wallet that supports TRC20, BEP20, or ERC20 USDT — including Trust Wallet, Binance, and MetaMask.</p></div></div>
+          <div class="faq-item"><button class="faq-q">Is KYC required?<span class="plus">+</span></button><div class="faq-a"><p>Basic verification may be requested for larger orders to keep transactions secure for both sides.</p></div></div>
+          <div class="faq-item"><button class="faq-q">How do I contact support?<span class="plus">+</span></button><div class="faq-a"><p>WhatsApp is the fastest way to reach us — the button on this page opens a chat directly with our team, 24×7.</p></div></div>
+          <div class="faq-item"><button class="faq-q">What payment methods are accepted?<span class="plus">+</span></button><div class="faq-a"><p>UPI, IMPS, NEFT, RTGS, and direct bank transfer are all accepted.</p></div></div>
+        </div>
+      </div></section>
+
+      <section id="contact"><div class="wrap-narrow center">
+        <div class="section-eyebrow">Contact</div>
+        <h2 class="section-title">Ready to buy?</h2>
+        <p class="section-desc">Tap below to chat with our team directly on WhatsApp — available 24×7.</p>
+        <a class="btn-wa" href="${waHref}" ${waAttrs} data-wa-track="contact" style="width:100%;">${WA_ICON} Chat on WhatsApp</a>
+      </div></section>
+
+      <section class="alt" id="trust"><div class="wrap">
+        <div class="trust-strip">
+          <div class="glass trust-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="10" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>Secure Transactions</div>
+          <div class="glass trust-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2 3 6v6c0 5 4 8 9 10 5-2 9-5 9-10V6l-9-4z"/></svg>Verified Seller</div>
+          <div class="glass trust-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>1000+ Happy Customers</div>
+          <div class="glass trust-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2 3 14h7l-1 8 10-12h-7l1-8z"/></svg>Fast Support</div>
+          <div class="glass trust-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 8v4l3 2"/></svg>24×7 Available</div>
+        </div>
+      </div></section>
+    </main>
+
+    <footer class="site"><div class="wrap foot-inner">
+      <div class="foot-grid">
+        <div>
+          <div class="brand" style="margin-bottom:12px;">
+            <img class="logo-mark" src="logo.png" alt="${settings.siteName} logo">
+            <div class="brand-block"><span class="logo">${settings.siteName}</span><span class="tagline">Trusted Since 2020</span></div>
+          </div>
+          <p style="font-size:13px;color:var(--text-muted);max-width:34ch;">Your trusted partner for fast, secure USDT purchases — 24×7 on WhatsApp.</p>
+        </div>
+        <div><h5>Company</h5><a href="#why">Why Us</a><a href="#reviews">Reviews</a><a href="#faq">FAQ</a></div>
+        <div><h5>Legal</h5><a href="#">Privacy Policy</a><a href="#">Terms &amp; Conditions</a><a href="#">Disclaimer</a></div>
+        <div><h5>Contact</h5><a href="${waHref}" ${waAttrs} data-wa-track="footer">WhatsApp Us</a><a href="/admin">Admin Login</a></div>
+      </div>
+      <div class="foot-bottom">
+        <span>© ${new Date().getFullYear()} ${settings.siteName}. All rights reserved.</span>
+        <span>Rates are indicative and subject to market fluctuation.</span>
+      </div>
+      <p class="disclaimer">Disclaimer: Cryptocurrency transactions carry market risk. This page does not constitute financial or investment advice. Please transact only after verifying wallet addresses and network details.</p>
+    </div></footer>
+
+    <a class="float-wa" href="${waHref}" ${waAttrs} data-wa-track="float" aria-label="Chat on WhatsApp">${WA_ICON}</a>
+  `;
+
+  document.querySelectorAll('[data-wa-track]').forEach(el => {
+    el.addEventListener('click', () => trackClick(el.getAttribute('data-wa-track')));
+  });
+
+  // Mobile hamburger menu
+  const burger = document.getElementById('navBurger');
+  const mobileMenu = document.getElementById('mobileMenu');
+  burger.addEventListener('click', () => {
+    const isOpen = mobileMenu.classList.toggle('open');
+    burger.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+  });
+  mobileMenu.querySelectorAll('a').forEach(a => {
+    a.addEventListener('click', () => { mobileMenu.classList.remove('open'); burger.setAttribute('aria-expanded','false'); });
+  });
+
+  // Scroll-reveal animation for sections
+  if(!window.matchMedia('(prefers-reduced-motion: reduce)').matches && 'IntersectionObserver' in window){
+    const revealTargets = document.querySelectorAll('.section-eyebrow, .cards-grid, .steps, .chip-grid, .pay-grid, .test-grid, #faqList, .trust-strip');
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if(entry.isIntersecting){
+          entry.target.classList.add('in-view');
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+    revealTargets.forEach(el => { el.classList.add('reveal'); io.observe(el); });
+  }
+
+  document.querySelectorAll('.faq-item').forEach(item => {
+    const q = item.querySelector('.faq-q');
+    const a = item.querySelector('.faq-a');
+    q.addEventListener('click', () => {
+      const isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item.open').forEach(o => {
+        o.classList.remove('open');
+        o.querySelector('.faq-a').style.maxHeight = null;
+      });
+      if(!isOpen){ item.classList.add('open'); a.style.maxHeight = a.scrollHeight + 'px'; }
+    });
+  });
+
+  const rateValueEl = document.getElementById('rateValue');
+  const rateChangeEl = document.getElementById('rateChange');
+  function tick(){
+    const drift = (Math.random()-0.5)*0.08;
+    rate = Math.max(settings.baseRate-0.6, Math.min(settings.baseRate+0.6, rate+drift));
+    const pct = (((rate-settings.baseRate)/settings.baseRate)*100).toFixed(2);
+    rateValueEl.textContent = rate.toFixed(2);
+    rateChangeEl.textContent = `${pct>=0?'▲':'▼'} ${Math.abs(pct)}% today`;
+  }
+  tick();
+  setInterval(tick, 5000);
+
+  trackVisit();
+}
+
+boot();
+</script>
+</body>
+</html>
